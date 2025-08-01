@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .search-bar {
     width: 400px;
     padding: 10px;
@@ -43,14 +48,14 @@
 
     margin:20px;
 }
+
 .height{
 height: 30px;
-
-
 }
-.c{
-    
-font-size: x-large;
+
+.bold{
+    font-weight: 900;
+    font-size: 20px;
 }
 
 .margin-top{
@@ -79,7 +84,7 @@ font-size: x-large;
 }
 
 p{
-color: rgb(0, 0, 0);
+color:                                                                         rgb(0, 0, 0);
 text-align: left;}
 
 .circle-image{
@@ -88,57 +93,29 @@ text-align: left;}
     border-radius: 50px;
 }
 
-.details{
-display: flex;
-flex-direction: row;
- color:rgb(94, 94, 94);
- margin-top: 20px;
+.details {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
 }
-.text details{
-    margin-left: 10px;
-    color:rgb(94, 94, 94);
+
+.text-details{
+    margin-left: 10px; 
 }
-.text details2{
-    margin-left: 10px;
-    margin-top: 10px;
 
+img:hover {
+    transform: scale(1.1);
+    transition: linear 0.4s;
+} 
+
+.youtybe{    
+    margin-right: 550px;
 }
- img:hover {
-            transform: scale(1.1);
-            transition: linear 0.5s;
-        } 
 
-        .marginerf{ 
-margin-left: 30px;
-margin-right: 30px;
-
-        }
-
-        .font-colour{
-
-            text-wrap: grey;
-        }
-        .font-weight{
-
-            font-weight: 900;
-        }
-        .youtybe{
-
-margin-right: 550px;
-
-        }
 .margin-top{
-margin-top: 10px;
-
+    margin-top: 10px;    
 }
 
-.margine-video{
-
-
-    margin-left: 10px;
-}
-.colour{
-
-color: rgb(102, 19, 19);
-
-}
+.gray-text {
+    color: gray;
+} 
