@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -7,6 +7,7 @@
     width: 80px;
     height: 80px;
 }
+
 .search-bar {
     width: 400px;
     padding: 10px;
@@ -14,7 +15,6 @@
     border: 1px solid #ccc;
     border-radius: 20px;
 }
-
 
 .inline {
     display: flex;
@@ -25,12 +25,14 @@
 .space-between {
     justify-content: space-between;
 }
-.youtybe{    
+
+.youtybe {
     margin-right: 550px;
 }
-.container{
+
+.container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 35px;
 }
 
@@ -40,61 +42,64 @@
     border: 1px solid black;
     border-radius: 50%;
 }
+
 .circle {
     width: 90px;
     height: 40px;
     border: 1px solid black;
     border-radius: 80px;
 }
-.circle-p{
+
+.circle-p {
     width: 50px;
     height: 50px;
     border: 1px solid black;
     border-radius: 50%;
 }
-.margin{
 
-    margin:20px;
+.margin {
+    margin: 20px;
 }
 
-.height{
+.height {
     height: 30px;
-} 
+}
 
-.bold{
+.bold {
     font-weight: 900;
     font-size: 20px;
 }
 
-.margin-top{
-    
-    margin-top: 40px;
+.margin-top {
+    margin-top: 10px;
 }
+
 .space-betweensquare {
     justify-content: space-between;
 }
 
-.thumbnail{
+.thumbnail {
     width: 400px;
-    height:200px;
+    height: 200px;
 }
 
-.item{
+.item {
     object-fit: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.circle-image{
+
+.circle-image {
     width: 50px;
-    height:50px ;
+    height: 50px;
     border-radius: 50px;
 }
 
-p{
-   color:                                                                         rgb(0, 0, 0);
-   text-align: left;}
-
+p {
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
 
 .details {
     display: flex;
@@ -102,20 +107,46 @@ p{
     margin-top: 20px;
 }
 
-.text-details{
-    margin-left: 10px; 
-}
-
-
-
-.margin-top{
-    margin-top: 10px;    
+.text-details {
+    margin-left: 10px;
 }
 
 .gray-text {
     color: gray;
-} 
-    img:hover {
-        transform: scale(1.1);
-        transition: linear 0.4s;
-    } 
+}
+
+img:hover {
+    transform: scale(1.1);
+    transition: linear 0.4s;
+}
+
+.flex {
+    justify-content: center;
+    grid-gap: auto;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+
+    .search-bar {
+        width: 300px; 
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr; 
+    }
+
+    .search-bar {
+        width: 200px; 
+    }
+
+    .thumbnail {
+        width: 100%; 
+        height: auto;
+    }
+}
