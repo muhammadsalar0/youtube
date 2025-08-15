@@ -50,7 +50,7 @@ body {
     width: 100%;
     max-width: 500px;
 }
- .img:hover {
+ img:hover {
             transform: scale(1.1);
             transition: linear 0.5s;
         }
@@ -208,4 +208,12 @@ body {
 .background-colour{
 background-color: rgba(0,0,0);
 
+}
+.logo-avif{
+
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
 }
